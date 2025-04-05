@@ -1,6 +1,7 @@
 plugins {
     `kotlin-dsl`
     `maven-publish`
+    id("org.example.sumerOfCode-source-strcuture-plugin") version "1.0.0"
 }
 
 group = "org.example.sumerOfCode"
@@ -21,7 +22,7 @@ tasks.test {
 gradlePlugin {
     plugins {
         create("SourceStructurePlugin") {
-            id = "org.example.sumerOfCode"
+            id = "org.example.sumerOfCode-source-strcuture-plugin"
             implementationClass = "SourceStructurePlugin"
         }
     }

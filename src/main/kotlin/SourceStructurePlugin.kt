@@ -3,7 +3,7 @@ import org.gradle.api.Project
 
 class KotlinSourceStructurePlugin : Plugin<Project> {
     override fun apply(project: Project) {
-        project.tasks.register("SourceStructureTask", SourceStructureTask::class.java)
+        project.tasks.register("sourceStructure", SourceStructureTask::class.java)
     }
 }
 
