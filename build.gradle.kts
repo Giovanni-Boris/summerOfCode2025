@@ -18,10 +18,16 @@ tasks.test {
     useJUnitPlatform()
 }
 
+gradlePlugin {
+    plugins {
+        create("SourceStructurePlugin") {
+            id = "org.example.sumerOfCode"
+            implementationClass = "SourceStructurePlugin"
+        }
+    }
+}
+    .
+
 kotlin {
     jvmToolchain(8)
-}
-
-application {
-    mainClass.set("MainKt")
 }
