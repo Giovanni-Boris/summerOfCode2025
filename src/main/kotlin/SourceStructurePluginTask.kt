@@ -1,7 +1,7 @@
 import org.gradle.api.tasks.TaskAction
 import java.io.File
 
-abstract class KotlinSourceStructureTask : org.gradle.api.DefaultTask() {
+abstract class SourceStructureTask : org.gradle.api.DefaultTask() {
     @TaskAction
     fun generateStructure() {
         val filesSourceDirs = project.fileTree("src").matching {
