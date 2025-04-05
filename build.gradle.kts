@@ -1,10 +1,10 @@
 plugins {
-    kotlin("jvm") version "1.9.0"
-    application
+    `kotlin-dsl`
+    `maven-publish`
 }
 
 group = "org.example.sumerOfCode"
-version = "1.0-SNAPSHOT"
+version = "1.0.0"
 
 repositories {
     mavenCentral()
